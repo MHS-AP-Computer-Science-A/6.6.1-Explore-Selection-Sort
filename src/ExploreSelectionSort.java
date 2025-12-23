@@ -27,58 +27,22 @@ public class ExploreSelectionSort {
     // Postcondition: Uses Selection Sort to put arr
     // in descending order
     public static void selectionSortDescending(int[] arr) {
-        for (int index = 0; index < arr.length - 1; index++) {
-            // Find the smallest value
-            int minIndex = index;
-            for (int i = index + 1; i < arr.length; i++) {
-                if (arr[i] > arr[minIndex]) {
-                    minIndex = i;
-                }
-            }
-            // Swap minIndex and index
-            int temp = arr[index];
-            arr[index] = arr[minIndex];
-            arr[minIndex] = temp;
-        }
+
     }
 
 
     // Postcondition: Uses Selection Sort to put the
     // arr in ascending order based on the ones digit (e.g. 91, 32, 23, .... )
     public static void selectionSortOnesDigit(int[] arr) {
-        for (int index = 0; index < arr.length - 1; index++) {
-            // Find the smallest value
-            int minIndex = index;
-            for (int i = index + 1; i < arr.length; i++) {
-                if (arr[i] %10 < arr[minIndex] %10) {
-                    minIndex = i;
-                }
-            }
-            // Swap minIndex and index
-            int temp = arr[index];
-            arr[index] = arr[minIndex];
-            arr[minIndex] = temp;
-        }
 
     }
 
     // Postcondition: Uses Selection Sort to put arr
     // in ascending alphabetical order
     public static void selectionSortAlpha(String[] arr) {
-        for (int index = 0; index < arr.length - 1; index++) {
-            // Find the smallest value
-            int minIndex = index;
-            for (int i = index + 1; i < arr.length; i++) {
-                if (arr[i].compareTo(arr[minIndex]) < 0) {
-                    minIndex = i;
-                }
-            }
-            // Swap minIndex and index
-            String temp = arr[index];
-            arr[index] = arr[minIndex];
-            arr[minIndex] = temp;
-        }
+
     }
+    
 
     public static void main(String[] args) throws IOException {
 
@@ -123,3 +87,4 @@ public class ExploreSelectionSort {
     }
 
 }
+
